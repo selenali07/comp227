@@ -1,0 +1,172 @@
+.grid-area {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 40px 400px 900px 520px 50px;
+    grid-template-areas:
+        "menu"
+        "main"
+        "image"
+        "text"
+        "footer-area";
+}
+
+.menu {
+    grid-area: menu;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    border-radius: 4px;
+    text-align: center;
+    margin: 8px 6px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus {
+    color: rgb(253, 187, 6);
+}
+
+.main {
+    grid-area: main;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "stripey"
+        "title";
+}
+
+.stripey {
+    grid-area: stripey;
+}
+
+.striImg {
+    width: 70%;
+    height: 60%;
+    margin: 5% 30%;
+    background-image: url(../img/stripey.jpeg);
+    background-size: cover;
+    display: flex;
+    gap: 3%;
+}
+
+.barA {
+    width: 4%;
+    background-color: black;
+}
+
+.barB {
+    margin-left: 12%;
+    width: 4%;
+    background-color: black;
+}
+
+.title {
+    width: 85%;
+    margin: 0rem auto;
+    grid-area: title;
+    color: white;
+}
+
+.image {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    grid-area: image;
+}
+
+.pic {
+    width: 95%;
+    height: 31%;
+    margin: auto;
+}
+
+.pictures {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.text {
+    grid-area: text;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 93%;
+    margin: 0rem auto;
+}
+
+h2 {
+    font-size: 100%;
+}
+
+.footer-area {
+    display: flex;
+    grid-area: footer-area;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 820px) {
+    .grid-area {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 40px 300px 350px 260px 50px;
+
+        grid-template-areas:
+            "menu"
+            "main"
+            "image"
+            "text"
+            "footer-area";
+    }
+
+    .main {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "title stripey";
+    }
+
+    .striImg {
+        width: 120%;
+        height: 30%;
+        margin: 6rem -20%;
+    }
+
+    .title {
+        height: 80%;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+
+    .image {
+        flex-flow: row nowrap;
+    }
+
+    .pic {
+        height: 90%;
+        width: 31%;
+        margin: 0rem auto;
+    }
+
+    .text {
+        flex-flow: row nowrap;
+    }
+
+    .card {
+        width: 48%;
+        margin: 0.5% auto;
+    }
+}
