@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    }
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+    color: rgb(41, 41, 41);
+    font-weight: normal;
+}
+
+body {
+    position: relative;
+}
+
+
+.btn {
+    display: inline-flex;
+    color: rgb(41, 41, 41);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.btn:hover, btn:focus {
+    color: rgb(94, 131, 155);
+}
+
+.menubar ul{
+    display: flex;
+    background-color: rgb(187, 214, 91);
+    text-align: center;
+    justify-content: flex-end;
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+
+header {
+    display: grid;
+    background-color: rgb(187, 214, 91);
+    font-weight: 300;
+    text-align: center;
+    padding: 60px;
+}
+
+
+.gallery {
+    width: 90%;
+    display: grid;
+    margin: 5%;
+}
+
+.bear {
+    width: 100%;
+    border-radius: 20px;
+    /* box-align: center;
+    padding: 30px;
+    margin: 0 auto;
+    */
+}
+
+.dog {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cat {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.content {
+    display: grid;
+}
+
+.first {
+    padding: 1rem;
+}
+
+.second {
+    padding: 1rem;
+}
+
+
+footer {
+    display: grid;
+    background-color: rgb(187, 214, 91);
+    width: 100%;
+    bottom: 0px;
+    line-height: 40px;
+    text-align: center;  
+    background-size: 100% 100%;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768) {
+    .gallery {
+        width: 33.5%;
+        display: inline-flex;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768) {
+    .content {
+        display: inline-flex;
+    }
+}
