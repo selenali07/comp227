@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta http-equiv="Content-Type" 
+    content="text/html; charset=UTF-8" />
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    </head> 
+
+<!-- Requirements Checklist
+in mobile view:
+♡ - a header area containing a site header (logo or text) and at least three nav menu items, all centered on the screen
+♡ - a horizontal row under the header containing three images, centered on the screen
+♡ - a "card" content area, containing a header, some text, and a button (which can lead to any page or website you wish; 
+    it doesn't need to make sense); the width of this area should be 90% or 100% of the screen width
+♡ - a footer that is 90% or 100% of the screen width
+- all links and buttons should be live and lead to somewhere, but it doesn't matter where--websites, additional HTML 
+    pages, whatever
+- links and buttons should have some kind of response when hovered over; in the case of the button, the whole button 
+    area should be clickable, not just the text
+
+in desktop view:
+♡ - a header area containing a site header (logo or text) and at least three nav menu items, all centered on the screen
+♡ - the horizontal row with three images converts automatically into a column on the left-hand side of the page; the images stack
+♡ - the "card" content area has all the same contents, but now it's horizontally to the right of the column with the three images
+♡ - a footer that is 90% or 100% of the screen width.
+- links and buttons should remain clickable; doesn't matter where they lead
+- links and buttons should have some kind of response when hovered over; in the case of the button, the whole button area should 
+    be clickable, not just the text
+--> 
+
+<body>
+    <div class="contain">
+    <header>
+        <h1>
+            she is the one
+        </h1>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://i.pinimg.com/474x/c4/f0/69/c4f06995fcbf4d7c5e6c16e4f396d461.jpg" target="_blank">named</a>
+                </li>
+                <li>
+                    <a href="https://heartastrology.com/wp-content/uploads/2020/06/sailor-moon__400x320.jpg" target="_blank">sailor</a>
+                </li>
+                <li>
+                    <a href="https://1.bp.blogspot.com/-YHtBrQSz77w/X1icjNjxz_I/AAAAAAAAZJU/uOzyiRvzGa8zcm0fx5RPCY7pMTSfnArvgCLcBGAsYHQ/s1600/sailor-moon.jpg" target="_blank">moon</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="stack">
+          <div class="img-div">
+            <img src="img/pink.png" class="imgs">
+        </div>
+        <div class="img-div">
+            <img src="img/blue.png" class="imgs">
+        </div>
+        <div class="img-div">
+            <img src="img/rainbow.png" class="imgs">
+        </div>
+    </div>
+    <div id="card">
+        <h2>
+            fighting evil by moonlight
+        </h2>
+        <h3>
+            but a hipster by daylight
+        </h3>
+        <p>
+            Offal tempor man bun selfies, 
+            voluptate pop-up keffiyeh fashion axe 
+            irony direct trade. Squid man bun taiyaki, 
+            lyft cillum sed hexagon shabby chic vegan 
+            ennui. Eiusmod reprehenderit flexitarian 
+            godard, austin shaman viral tacos tempor 
+            gastropub banjo art party pabst qui. 
+            Listicle sint before they sold out, 
+            freegan williamsburg skateboard sunt 
+            vinyl. Proident anim 90's, franzen offal 
+            unicorn narwhal mumblecore.
+        </p>
+        <p>
+            "In the name of the moon, I'll punish you!"
+        </p>
+        
+        <div class="button">
+            <a href="https://c.tenor.com/Zmb1O2uDl3YAAAAC/sailormoon-excited.gif" target="_blank" id="button-li">luna</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            a comp126 production; i'd like to not only thank me, but Salma Salih
+        </p>
+    </footer>
+</div>
+</body>
+</html>
