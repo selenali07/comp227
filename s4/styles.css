@@ -1,0 +1,123 @@
+.container {
+  display: grid;
+  width: 90%;
+  height: 0 auto;
+  grid-template-columns: 20fr 20fr 20fr;
+  grid-template-rows: 20fr 20fr 20fr;
+  grid-template-areas:
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+}
+
+
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+}
+
+@media screen and (min-width:700px) {
+.container {
+  display: grid ;
+  width: 90% ;
+  height: 0 auto;
+  grid-template-columns: 20fr 20fr 20fr;
+  grid-template-rows: 20fr 20fr 20fr;
+  grid-template-areas:
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+}
+.footer {
+  float: right;
+}
+.main{
+  float: left;
+}
+}
+  
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.item {
+  background-color:grey;
+  color: black;
+  border-radius: 1px;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+.aside {
+  background-color: lightgrey;
+}
+
+.main{
+  background-color: silver;
+}
+
+.footer {
+  background-color: grey;
+}
+.box-container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+.box{
+  background-color: aquamarine;
+  height: 25%;
+  width: 60%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 5%;
+   min-width: 100px;
+  flex: 0 1 auto;
+}
+
+.box:hover {
+  background-color: whitesmoke;
+  text-decoration: underline;
+}
+
+.nav ul li{
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  float: inline-start;
+}
+.img {
+  align-items: center;
+  float: right;
+  width: 70% ;
+}
+/* yeah i give up, imma just take this L*/

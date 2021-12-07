@@ -11,10 +11,10 @@ body {
     display: grid;
     height: 100vh;
     grid-template-areas:
-      "nav nav nav nav"
-      "sidebar content1 content2 content3"
-      "sidebar main main main"
-      "sidebar footer footer footer";
+      "nav nav"
+      "content1 content2"
+      "main main"
+      "footer footer";
     grid-gap: 0.2rem;
     font-weight: 800;
     text-transform: uppercase;
